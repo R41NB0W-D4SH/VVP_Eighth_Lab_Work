@@ -1,40 +1,57 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 int main()
 {
 	setlocale(0, "");
-	int a, x, z;
-	string b = "Четное", c = "Нечетное", d = "Одно", e = "Двух", f = "Трех";
+	int a, b, c;
+	string a1, a2, a3;
 
 	cout << "Введите точку A (от 1 до 999)" << endl;
 	cin >> a;
 
-	z = a;
-	x = 0;
+	c = a;
+	b = 0;
+	a3 = " Это";
 
 	if (a > 0 && a < 1000)
 	{
 		if (a % 2 == 1)
 		{
-			cout << "Число А равное " << a <<" " << c << " ";
+		a1 = " Нечетное";
 		}
 		else
 		{
-			cout << "Число А равное " << a <<" "<< b << " ";
+		a1 = " Четное";
 		}
-		while (x != 0)
+		while (c != 0)
 		{
-			z = (z - z % 10) / 10;
-			x = x + 1;
+			c = (c - c % 10) / 10;
+			b = b + 1;
 		}
-		if (x == 1) d;
-		else if (x == 2) e;
-		else f;
+		if (b == 1)
+		{
+		a2 = " одно";
+		}
+		else if (b == 2)
+		{
+		a2 = " двух";
+		}
+		else
+		{
+		a2 = " трех";
+		}
+
+		cout << a << a3 << a1 << a2 << "значное число" << endl;
 	}
 	else
 	{
 		cout << "Введите число, следуя условиям задачи! Попробуйте еще раз" << endl;
 	}
 
-	cout << "значное" << endl;
+
 
 	system("pause");
 	return 0;
