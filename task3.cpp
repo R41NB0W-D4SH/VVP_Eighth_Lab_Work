@@ -6,8 +6,8 @@ using namespace std;
 int main()
 {
 	setlocale(0, "");
-	double a, b, c, min;
-	
+	double ax, bx, cx, ay, by, cy;
+
 	cout << "Введите координа трех точек. Сначала A, потом B, затем C" << endl;
 	cin >> ax >> bx >> cx;
 	cin >> ay >> by >> cy;
@@ -18,13 +18,13 @@ int main()
 
 
 
-	if (bd < cd )
+	if (bd < cd)
 	{
-		cout << "Ближайшая точка к A это точка C равная " << c << " и ее расстояние до A равно " << cd << endl;
+		cout << "Ближайшая точка к A это точка C и ее расстояние до A равно " << cd << endl;
 	}
 	else
 	{
-		cout << "Ближайшая точка к A это точка B равная " << b << " и ее расстояние до A равно " << bd << endl;
+		cout << "Ближайшая точка к A это точка B равная и ее расстояние до A равно " << bd << endl;
 	}
 
 	system("pause");
